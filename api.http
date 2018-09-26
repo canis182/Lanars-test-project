@@ -1,0 +1,19 @@
+### Registration new user
+POST http://localhost:3000/api/register
+Content-Type: application/json
+
+{
+    "name": "User",
+    "email": "usdasvnaddasdfdsaer@gmail.com",
+    "password":"qwerty",
+    "phone": "+38000000000"
+}
+
+### Authorization User
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+    "email": "user@gmail.com",
+    "password": "qwerty"
+}
