@@ -25,5 +25,8 @@ exports.validateSchemaFromUpdateCurrentUser = {
     current_password: Joi.string().regex(/^[a-zA-Z0-9]{3,30}$/), 
     new_password: Joi.string().regex(/^[a-zA-Z0-9]{3,30}$/) 
 }
-
+exports.validateSchemaFromCreateItem = {
+    title: Joi.string().required(),
+    description: Joi.string().required()
+}
 
