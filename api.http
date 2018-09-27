@@ -4,7 +4,7 @@ Content-Type: application/json
 
 {
     "name": "User",
-    "email": "usdasvnaddasdfdsaer@gmail.com",
+    "email": "ussssssssser@gmail.com",
     "password":"qwerty",
     "phone": "+38000000000"
 }
@@ -17,3 +17,32 @@ Content-Type: application/json
     "email": "user@gmail.com",
     "password": "qwerty"
 }
+
+### Get current user
+GET http://localhost:3000/api/me
+Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJpZCI6NSwicGhvbmUiOm51bGwsImlhdCI6MTUzNzk4OTY3NSwiZXhwIjoxNTM4MDc2MDc1LCJzdWIiOiI1In0.5UpbsbzdkVRj4R_qsHG9DIG30fNg-Q7W0MKvxlPKltRA1L0Ht8OLhbm29xRaTZ97AlBVIOn4L6SdvM258VKaDg
+
+### Update current user
+PUt http://localhost:3000/api/me
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNzc3Nzc3Nzc2VyQGdtYWlsLmNvbSIsImlkIjoyLCJwaG9uZSI6IiszODAwMDAwMDAwMCIsImlhdCI6MTUzODA1MjA1OCwiZXhwIjoxNTM4MTM4NDU4LCJzdWIiOiIyIn0.YRUNI2cbxB_LpSrRqMXG1A67NnaJxiKs9HvMN38QNpJInzqxtvsusVhzPDoLlQGyZnQkh85dYyelVZ3g-8ij4w
+
+{
+    "phone": "+38000000000",
+    "name": "lsaa", 
+    "email": "lalala@gmail.com", 
+    "current_password": "aaaaaa", 
+    "new_password": "aaaadsaaa" 
+}
+
+### Get user by Id
+GET http://localhost:3000/api/user/5
+Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNzc3Nzc3Nzc2VyQGdtYWlsLmNvbSIsImlkIjoyLCJwaG9uZSI6IiszODAwMDAwMDAwMCIsImlhdCI6MTUzODA1MjA1OCwiZXhwIjoxNTM4MTM4NDU4LCJzdWIiOiIyIn0.YRUNI2cbxB_LpSrRqMXG1A67NnaJxiKs9HvMN38QNpJInzqxtvsusVhzPDoLlQGyZnQkh85dYyelVZ3g-8ij4w
+
+### Search user
+GET http://localhost:3000/api/user?name=User
+
+### Create item
+
+
+
