@@ -3,8 +3,8 @@ POST http://localhost:3000/api/register
 Content-Type: application/json
 
 {
-    "name": "User",
-    "email": "us@gmail.com",
+    "name": "Bla",
+    "email": "ussder@gmail.com",
     "password":"qwerty",
     "phone": "+38000000000"
 }
@@ -14,42 +14,72 @@ POST http://localhost:3000/api/login
 Content-Type: application/json
 
 {
-    "email": "us@gmail.com",
+    "email": "user@gmail.com",
     "password": "qwerty"
 }
 
 ### Get current user
 GET http://localhost:3000/api/me
-Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNAZ21haWwuY29tIiwiaWQiOjQsInBob25lIjoiKzM4MDAwMDAwMDAwIiwiaWF0IjoxNTM4MDc0MTY4LCJleHAiOjE1MzgxNjA1NjgsInN1YiI6IjQifQ.MlngF0_e0RkReciLPtGy5v9GT6W_c7VPAVfK9VjeucOWBtJBalqxE541Ap69DMIlg7M4y80Wm0ZEFtxtVILrnw
+Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJpZCI6MiwicGhvbmUiOiIrMzgwMDAwMDAwMDAiLCJpYXQiOjE1MzgyNTc4NjYsImV4cCI6MTUzODM0NDI2Niwic3ViIjoiMiJ9.Wn3ZNgr5dkTBacyfTOz2BH7cjmPs1Btbifj4b3NOj4l2pUnod84wufm8X1X71_wWlVKooBB_fsh6wwDZcmw2uQ
 
 ### Update current user
 PUT http://localhost:3000/api/me
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNzc3NzYWRzc3NzZXJAZ21haWwuY29tIiwiaWQiOjMsInBob25lIjoiKzM4MDAwMDAwMDAwIiwiaWF0IjoxNTM4MDcwODg1LCJleHAiOjE1MzgxNTcyODUsInN1YiI6IjMifQ.4-o0hh9ExPEPqj-rUe-q1Ou1a0AtRyZQy80L2s4xyEv86wSE6pvZ8-vo4S9IZGH_OkQ2J6huVL8L8HHpCfnmLA
+Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJpZCI6MiwicGhvbmUiOiIrMzgwMDAwMDAwMDAiLCJpYXQiOjE1MzgyNTc4NjYsImV4cCI6MTUzODM0NDI2Niwic3ViIjoiMiJ9.Wn3ZNgr5dkTBacyfTOz2BH7cjmPs1Btbifj4b3NOj4l2pUnod84wufm8X1X71_wWlVKooBB_fsh6wwDZcmw2uQ
 
 {
     "phone": "+38000100000",
-    "name": "sfsadhfh", 
-    "email": "lasdasdfgslala@gmail.com", 
-    "current_password": "aaaadsasasadaa", 
-    "new_password": "aaaadsasasadaa" 
+    "name": "Bla", 
+    "email": "bla@gmail.com", 
+    "current_password": "qwerty", 
+    "new_password": "bla" 
 }
 
 ### Get user by Id
-GET http://localhost:3000/api/user/5
-Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNAZ21haWwuY29tIiwiaWQiOjQsInBob25lIjoiKzM4MDAwMDAwMDAwIiwiaWF0IjoxNTM4MDc0MTY4LCJleHAiOjE1MzgxNjA1NjgsInN1YiI6IjQifQ.MlngF0_e0RkReciLPtGy5v9GT6W_c7VPAVfK9VjeucOWBtJBalqxE541Ap69DMIlg7M4y80Wm0ZEFtxtVILrnw
+GET http://localhost:3000/api/user/2
+Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJpZCI6MiwicGhvbmUiOiIrMzgwMDAwMDAwMDAiLCJpYXQiOjE1MzgyNTc4NjYsImV4cCI6MTUzODM0NDI2Niwic3ViIjoiMiJ9.Wn3ZNgr5dkTBacyfTOz2BH7cjmPs1Btbifj4b3NOj4l2pUnod84wufm8X1X71_wWlVKooBB_fsh6wwDZcmw2uQ
 
 ### Search user
-GET http://localhost:3000/api/user?name=User
+GET http://localhost:3000/api/user?name=user&email=user@gmail.com
 
 ### Create item
 PUT http://localhost:3000/api/item
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNzc3Nzc3Nzc2VyQGdtYWlsLmNvbSIsImlkIjoyLCJwaG9uZSI6IiszODAwMDAwMDAwMCIsImlhdCI6MTUzODA1MjA1OCwiZXhwIjoxNTM4MTM4NDU4LCJzdWIiOiIyIn0.YRUNI2cbxB_LpSrRqMXG1A67NnaJxiKs9HvMN38QNpJInzqxtvsusVhzPDoLlQGyZnQkh85dYyelVZ3g-8ij4w
+Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJpZCI6MiwicGhvbmUiOiIrMzgwMDAwMDAwMDAiLCJpYXQiOjE1MzgyNTc4NjYsImV4cCI6MTUzODM0NDI2Niwic3ViIjoiMiJ9.Wn3ZNgr5dkTBacyfTOz2BH7cjmPs1Btbifj4b3NOj4l2pUnod84wufm8X1X71_wWlVKooBB_fsh6wwDZcmw2uQ
 
 {
     "title": "Awesome work",
     "description": "Awesome project"
 }
+### Delete item by Id
+DELETE http://localhost:3000/api/item/5
+Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJpZCI6MiwicGhvbmUiOiIrMzgwMDAwMDAwMDAiLCJpYXQiOjE1MzgyNTc4NjYsImV4cCI6MTUzODM0NDI2Niwic3ViIjoiMiJ9.Wn3ZNgr5dkTBacyfTOz2BH7cjmPs1Btbifj4b3NOj4l2pUnod84wufm8X1X71_wWlVKooBB_fsh6wwDZcmw2uQ
 
+### Get item by Id
+GET http://localhost:3000/api/item/2
 
+### Upload item image
+POST http://localhost:3000/api/item/6/image
+Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJpZCI6MiwicGhvbmUiOiIrMzgwMDAwMDAwMDAiLCJpYXQiOjE1MzgyNTc4NjYsImV4cCI6MTUzODM0NDI2Niwic3ViIjoiMiJ9.Wn3ZNgr5dkTBacyfTOz2BH7cjmPs1Btbifj4b3NOj4l2pUnod84wufm8X1X71_wWlVKooBB_fsh6wwDZcmw2uQ
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="image"; filename="iAm.png"
+Content-Type: image/jpeg
+
+< ./images/iAm.png
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+### Search items
+GET http://localhost:3000/api/item?title=Awesome+work&user_id=2&order_by=created_at&order_type=asc
+### Update item
+PUT http://localhost:3000/api/item/6
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJpZCI6MiwicGhvbmUiOiIrMzgwMDAwMDAwMDAiLCJpYXQiOjE1MzgyNTc4NjYsImV4cCI6MTUzODM0NDI2Niwic3ViIjoiMiJ9.Wn3ZNgr5dkTBacyfTOz2BH7cjmPs1Btbifj4b3NOj4l2pUnod84wufm8X1X71_wWlVKooBB_fsh6wwDZcmw2uQ
+
+{
+    "title": "bla",
+    "description": "bla" 
+}
+### Remove item image
+DELETE http://localhost:3000/api/item/6/image
+Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJpZCI6MiwicGhvbmUiOiIrMzgwMDAwMDAwMDAiLCJpYXQiOjE1MzgyNTc4NjYsImV4cCI6MTUzODM0NDI2Niwic3ViIjoiMiJ9.Wn3ZNgr5dkTBacyfTOz2BH7cjmPs1Btbifj4b3NOj4l2pUnod84wufm8X1X71_wWlVKooBB_fsh6wwDZcmw2uQ

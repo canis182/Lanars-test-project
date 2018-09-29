@@ -1,4 +1,5 @@
 const ExtractJwt = require("passport-jwt").ExtractJwt;
+
 const { access } = require("./token");
 
 module.exports = {
