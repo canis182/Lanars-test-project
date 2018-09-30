@@ -25,7 +25,7 @@ Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9U
 ### Update current user
 PUT http://localhost:3000/api/me
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJpZCI6MiwicGhvbmUiOiIrMzgwMDAwMDAwMDAiLCJpYXQiOjE1MzgyNTc4NjYsImV4cCI6MTUzODM0NDI2Niwic3ViIjoiMiJ9.Wn3ZNgr5dkTBacyfTOz2BH7cjmPs1Btbifj4b3NOj4l2pUnod84wufm8X1X71_wWlVKooBB_fsh6wwDZcmw2uQ
+Authorization: 
 
 {
     "phone": "+38000100000",
@@ -36,8 +36,8 @@ Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9U
 }
 
 ### Get user by Id
-GET http://localhost:3000/api/user/2
-Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJpZCI6MiwicGhvbmUiOiIrMzgwMDAwMDAwMDAiLCJpYXQiOjE1MzgyNTc4NjYsImV4cCI6MTUzODM0NDI2Niwic3ViIjoiMiJ9.Wn3ZNgr5dkTBacyfTOz2BH7cjmPs1Btbifj4b3NOj4l2pUnod84wufm8X1X71_wWlVKooBB_fsh6wwDZcmw2uQ
+GET http://localhost:3000/api/user/1
+Authorization: 
 
 ### Search user
 GET http://localhost:3000/api/user?name=user&email=user@gmail.com
@@ -45,22 +45,22 @@ GET http://localhost:3000/api/user?name=user&email=user@gmail.com
 ### Create item
 PUT http://localhost:3000/api/item
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJpZCI6MiwicGhvbmUiOiIrMzgwMDAwMDAwMDAiLCJpYXQiOjE1MzgyNTc4NjYsImV4cCI6MTUzODM0NDI2Niwic3ViIjoiMiJ9.Wn3ZNgr5dkTBacyfTOz2BH7cjmPs1Btbifj4b3NOj4l2pUnod84wufm8X1X71_wWlVKooBB_fsh6wwDZcmw2uQ
+Authorization: 
 
 {
     "title": "Awesome work",
     "description": "Awesome project"
 }
 ### Delete item by Id
-DELETE http://localhost:3000/api/item/5
-Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJpZCI6MiwicGhvbmUiOiIrMzgwMDAwMDAwMDAiLCJpYXQiOjE1MzgyNTc4NjYsImV4cCI6MTUzODM0NDI2Niwic3ViIjoiMiJ9.Wn3ZNgr5dkTBacyfTOz2BH7cjmPs1Btbifj4b3NOj4l2pUnod84wufm8X1X71_wWlVKooBB_fsh6wwDZcmw2uQ
+DELETE http://localhost:3000/api/item/1
+Authorization: 
 
 ### Get item by Id
 GET http://localhost:3000/api/item/2
 
 ### Upload item image
-POST http://localhost:3000/api/item/6/image
-Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJpZCI6MiwicGhvbmUiOiIrMzgwMDAwMDAwMDAiLCJpYXQiOjE1MzgyNTc4NjYsImV4cCI6MTUzODM0NDI2Niwic3ViIjoiMiJ9.Wn3ZNgr5dkTBacyfTOz2BH7cjmPs1Btbifj4b3NOj4l2pUnod84wufm8X1X71_wWlVKooBB_fsh6wwDZcmw2uQ
+POST http://localhost:3000/api/item/1/image
+Authorization: 
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
 
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
@@ -72,14 +72,14 @@ Content-Type: image/jpeg
 ### Search items
 GET http://localhost:3000/api/item?title=Awesome+work&user_id=2&order_by=created_at&order_type=asc
 ### Update item
-PUT http://localhost:3000/api/item/6
+PUT http://localhost:3000/api/item/1
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJpZCI6MiwicGhvbmUiOiIrMzgwMDAwMDAwMDAiLCJpYXQiOjE1MzgyNTc4NjYsImV4cCI6MTUzODM0NDI2Niwic3ViIjoiMiJ9.Wn3ZNgr5dkTBacyfTOz2BH7cjmPs1Btbifj4b3NOj4l2pUnod84wufm8X1X71_wWlVKooBB_fsh6wwDZcmw2uQ
+Authorization: 
 
 {
     "title": "bla",
     "description": "bla" 
 }
 ### Remove item image
-DELETE http://localhost:3000/api/item/6/image
-Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJpZCI6MiwicGhvbmUiOiIrMzgwMDAwMDAwMDAiLCJpYXQiOjE1MzgyNTc4NjYsImV4cCI6MTUzODM0NDI2Niwic3ViIjoiMiJ9.Wn3ZNgr5dkTBacyfTOz2BH7cjmPs1Btbifj4b3NOj4l2pUnod84wufm8X1X71_wWlVKooBB_fsh6wwDZcmw2uQ
+DELETE http://localhost:3000/api/item/1/image
+Authorization: 
