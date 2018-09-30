@@ -3,8 +3,8 @@ POST http://localhost:3000/api/register
 Content-Type: application/json
 
 {
-    "name": "Bla",
-    "email": "ussder@gmail.com",
+    "name": "User",
+    "email": "user@gmail.com",
     "password":"qwerty",
     "phone": "+38000000000"
 }
@@ -20,17 +20,17 @@ Content-Type: application/json
 
 ### Get current user
 GET http://localhost:3000/api/me
-Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJpZCI6MiwicGhvbmUiOiIrMzgwMDAwMDAwMDAiLCJpYXQiOjE1MzgyNTc4NjYsImV4cCI6MTUzODM0NDI2Niwic3ViIjoiMiJ9.Wn3ZNgr5dkTBacyfTOz2BH7cjmPs1Btbifj4b3NOj4l2pUnod84wufm8X1X71_wWlVKooBB_fsh6wwDZcmw2uQ
+Authorization: 
 
 ### Update current user
 PUT http://localhost:3000/api/me
 Content-Type: application/json
-Authorization: 
+Authorization: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0b2tlblR5cGUiOiJUT0tFTl9UWVBFX0FDQ0VTUyIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJpZCI6OSwicGhvbmUiOiIrMzgwMDAwMDAwMDAiLCJpYXQiOjE1MzgzNTA3MjgsImV4cCI6MTUzODQzNzEyOCwic3ViIjoiOSJ9.W7D7ieriFSFNEwmCg112m6D-NhWzox9FICO_g12VN8lQnJCIC8oQWd7GM1PcEF4mnCFC53KnnstmW6B3N8kQGA
 
 {
     "phone": "+38000100000",
     "name": "Bla", 
-    "email": "bla@gmail.com", 
+    "email": "user@gmail.com", 
     "current_password": "qwerty", 
     "new_password": "bla" 
 }
